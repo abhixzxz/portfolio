@@ -26,6 +26,9 @@ import {
   softern,
   safeLogo,
   freelancer,
+  nextProj,
+  reactNative,
+  socialMedia,
 } from "../assets";
 
 export const navLinks = [
@@ -186,12 +189,12 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Brew Hub",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "BrewHub is a feature-rich coffee booking app designed to elevate your coffee experience. Whether you're a casual coffee enthusiast or a devoted connoisseur, BrewHub provides a seamless platform to explore, reserve, and savor your favorite brews. Say goodbye to long queues and welcome a personalized coffee journey right at your fingertips.",
     tags: [
       {
-        name: "react",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
@@ -199,20 +202,20 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "NativeWind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: reactNative,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Adminify",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Adminify is a cutting-edge admin panel built on Next.js, designed to empower businesses with robust and efficient management tools. Tailored for scalability and performance, Adminify offers a seamless and intuitive interface to streamline administrative tasks, providing a powerful solution for businesses of all sizes.",
     tags: [
       {
-        name: "react",
+        name: "Next JS",
         color: "blue-text-gradient",
       },
       {
@@ -220,20 +223,20 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: nextProj,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Social Sphere",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Description: SocialSphere is a dynamic social media platform crafted with React for a modern frontend experience and Node.js for a robust backend infrastructure. It's a virtual space designed to foster connections, facilitate meaningful interactions, and empower users to share their stories and experiences in a secure and engaging environment.",
     tags: [
       {
-        name: "nextjs",
+        name: "React JS",
         color: "blue-text-gradient",
       },
       {
@@ -245,7 +248,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: socialMedia,
     source_code_link: "https://github.com/",
   },
 ];

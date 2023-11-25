@@ -1,4 +1,5 @@
 import logo from "../assets/logo-2-removed.png";
+import MyPic from "../assets/myimage.jpeg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -32,9 +33,14 @@ import tripguide from "./tripguide.png";
 import softern from "./softern.jpeg";
 import safeLogo from "./safe.png";
 import freelancer from "./freelancer.jpeg";
-
+import nextProj from "./nextP.jpeg";
+import socialMedia from "./socialP.jpeg";
+import reactNative from "./reactnativeP.jpeg";
 
 export {
+  reactNative,
+  socialMedia,
+  nextProj,
   freelancer,
   safeLogo,
   logo,
@@ -66,4 +72,5 @@ export {
   jobit,
   tripguide,
   softern,
+  MyPic,
 };
