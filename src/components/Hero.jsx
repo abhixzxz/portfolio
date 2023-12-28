@@ -2,8 +2,27 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const isMobile = window.innerWidth <= 768;
+  const initialText = "Hi, I'm Abhi";
+  const [displayText, setDisplayText] = useState("");
+
+  useEffect(() => {
+    let index = 0;
+
+    const typingInterval = setInterval(() => {
+      if (index <= initialText.length) {
+        setDisplayText(initialText.substring(0, index));
+        index += 1;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 100);
+
+    return () => clearInterval(typingInterval);
+  }, []);
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -16,7 +35,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#54af42]">Abhi</span>
+            <span className="text-[#54af42]">{displayText}</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             React JS <br className="sm:block hidden" />
@@ -25,7 +44,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {!isMobile && <ComputersCanvas />}
 
       {/* <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">

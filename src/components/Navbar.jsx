@@ -9,6 +9,7 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const isMobile = window.innerWidth <= 768;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,9 +52,11 @@ const Navbar = () => {
 
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Abhiraj.k &nbsp;-&nbsp; &nbsp;
-            <span className="hidden sm:inline-block">
-              The best way to predict the future is to create it
-            </span>
+            {!isMobile && (
+              <span className="hidden sm:inline-block">
+                The best way to predict the future is to create it
+              </span>
+            )}
           </p>
         </Link>
 
